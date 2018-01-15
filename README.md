@@ -1,0 +1,2 @@
+# DigitalAlbumBasedOnSSE
+基于SSE指令的电子相册，完成图片间渐变转变，通过SSE指令和多线程进行加速处理
