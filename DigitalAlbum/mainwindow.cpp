@@ -47,17 +47,20 @@ void MainWindow::on_browseBtn_clicked()
         {
             ui->directoryComboBox->addItem(directory);
         }
-
+        //show new directory in combo box
         ui->directoryComboBox->setCurrentIndex(ui->directoryComboBox->findText(directory));
     }
 
     imgs = util::getImgs(ui->directoryComboBox->currentText(), width ,height);
+
     if (!imgs.size())
     {
+        //If there is no pic in current directory,clear shown pic
         ui->imgLabel->clear();
     }
     else
     {
+        //reset pics_index cause of a new directory selected
         pics_index = 0;
         showImg();
     }
