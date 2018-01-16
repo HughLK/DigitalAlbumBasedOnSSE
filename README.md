@@ -7,9 +7,9 @@
 
 ## SSE指令
 SSE(Streaming SIMD Extensions)是英特尔在其计算机芯片Pentium III中引入的SIMD指令集，即单指令可处理多数据。</br>
-SSE支持多个128位寄存器。</br>
+SSE支持多个128位寄存器，每次对一个寄存器中的数据进行处理，因此，在一个寄存器中存储多个数据，就可以实现单指令对多数据操作。</br>
 在目前主流的编程语言中，只有C和C++支持SSE指令。</br>
-本项目中主要使用[SSE2中的函数][1]。
+[SSE函数介绍][1]。
 ## 图片渐变
 两幅图片进行变换的公式为：</br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=Result&space;Pixle&space;=&space;APixel&space;\times&space;fade&space;&plus;&space;BPixel&space;\times&space;(1&space;-&space;fade)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Result&space;Pixle&space;=&space;APixel&space;\times&space;fade&space;&plus;&space;BPixel&space;\times&space;(1&space;-&space;fade)" title="Result Pixle = APixel \times fade + BPixel \times (1 - fade)" /></a></br>
